@@ -30,7 +30,7 @@ namespace API1.Extensions
             // sagt dem Mediator wo man die Handler findet
             services.AddMediatR(typeof(List.Handler).Assembly);
             services.AddAutoMapper(typeof(MappingProfiles).Assembly);
-
+            
             return services;
         }
     }
