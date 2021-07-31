@@ -1,4 +1,6 @@
 
+using System.Collections.Generic;
+using System.Linq;
 using Application.Activities;
 using Application.Core;
 using AutoMapper;
@@ -30,7 +32,7 @@ namespace API1.Extensions
             // sagt dem Mediator wo man die Handler findet
             services.AddMediatR(typeof(List.Handler).Assembly);
             services.AddAutoMapper(typeof(MappingProfiles).Assembly);
-            
+
             return services;
         }
     }
