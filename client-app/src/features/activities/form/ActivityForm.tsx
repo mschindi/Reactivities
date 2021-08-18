@@ -28,7 +28,7 @@ export default function ActivityForm({activity: selectedActivity, closeForm}: Pr
         const {name, value} = event.target;
         setActivity({...activity, [name]: value})
     }
-    
+    x
     return(
         <Segment clearing>
             <Form onSubmit={handleSubmit} autoComplete='off'>
